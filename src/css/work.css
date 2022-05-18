@@ -1,0 +1,88 @@
+.hidden {
+  display: none;
+}
+.experience-info {
+  display: flex;
+  flex-direction: column;
+}
+.experience-section {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.experience-header {
+  margin: 0;
+}
+.experience-inner {
+  display: flex;
+  float: left;
+  padding: 2em;
+  margin: 1em;
+  border: 2px solid black;
+}
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.work-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 0fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 10px;
+}
+.work-item > * {
+  margin: 0;
+}
+.work-title {
+  font-size: 1.2rem;
+  grid-area: 1 / 1 / 2 / 2;
+}
+.work-date {
+  color: grey;
+  grid-area: 2 / 1 / 3 / 2;
+}
+.work-place {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.work-location {
+  grid-area: 4 / 1 / 5 / 2;
+}
+.work-desc {
+  grid-area: 5 / 1 / 6 / 2;
+}
+.work-delete-btn {
+  width: 20px;
+  border: none;
+  background: none;
+  border-radius: 5px;
+  justify-self: flex-end;
+  grid-area: 1 / 2 / 2 / 3;
+}
+.work-delete-btn:hover {
+  background: grey;
+  color: white;
+  transition: 0.5s;
+}
+.delete-btn .work-date,
+.work-place,
+.work-location,
+.work-desc {
+  font-size: 1rem;
+}
+.work-save {
+  border: none;
+  background: #1f1b26;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  color: #f5f4f4;
+}
+.work-save:hover {
+  color: #1f1b26;
+  background: #f5f4f4;
+  cursor: pointer;
+  transition: 0.5s;
+}

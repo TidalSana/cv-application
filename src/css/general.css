@@ -1,0 +1,7 @@
+.general-info {
+  display: flex;
+  flex-direction: column;
+}
+#name {
+  font-size: 3em;
+}
